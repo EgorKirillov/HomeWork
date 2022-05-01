@@ -1,0 +1,78 @@
+.message {
+
+}
+
+.tableMsg {
+    background-color: #b7e616;
+    margin-left: 20px;
+    border: 5px solid transparent;
+
+    /*border: solid black;*/
+}
+tr td {
+    /*border: solid black;*/
+
+}
+
+.ava {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.name {
+    color: #7875a4;
+    /*margin-left: 1px;*/
+    margin-top: 10px;
+    line-height: 0.3;
+}
+.content {
+    color: #c2d3c1;
+
+}
+.timeMsg {
+    color: #2e4928;
+    vertical-align: bottom;
+    /*padding-block-start: 0px;*/
+}
+
+.avaPosition {
+    vertical-align: bottom;
+    horiz-align: left;
+    padding-right: 25px;
+
+}
+
+.d33 {
+    width: auto;
+    height: auto;
+    /*margin-left: 10px;*/
+    background: #021b00;
+    position: relative;
+    border-radius:10px 10px 10px 0;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.d33:after {
+    content:"";
+    position:absolute;
+    top:calc(100% - 20px);
+    right: 100%;
+    width:20px;
+    height:20px;
+    background: #b7e616;
+    border-bottom-right-radius:20px;
+}
+.d33 > :first-child:before {
+    content:"";
+    position:absolute;
+    top:calc(100% - 20px);
+    right:100%;
+    width:20px;
+    height:20px;
+    background:#021b00;
+    /*-moz-border-radius-bottomleft:25px;*/
+
+}
+
+
