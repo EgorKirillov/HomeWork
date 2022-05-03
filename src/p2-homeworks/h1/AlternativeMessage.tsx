@@ -7,5 +7,4 @@ function AlternativeMessage() {
         </div>
     )
 }
-
 export default AlternativeMessage
