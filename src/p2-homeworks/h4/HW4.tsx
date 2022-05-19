@@ -6,7 +6,7 @@ import SuperCheckbox from './common/c3-SuperCheckbox/SuperCheckbox'
 
 function HW4() {
     const [text, setText] = useState<string>('')
-    const error = text ? '' : 'error'
+    const error = text ? '' : 'enter text'
 
     const showAlert = () => {
         if (error) {
@@ -17,41 +17,54 @@ function HW4() {
     }
 
     const [checked, setChecked] = useState<boolean>(false)
-    const testOnChange = (e: ChangeEvent<HTMLInputElement>) => setChecked(e.currentTarget.checked)
+    const testOnChange = (e: ChangeEvent<HTMLInputElement>) =>setChecked(e.currentTarget.checked)
+
+
 
     return (
+
         <div>
             <hr/>
             homeworks 4
 
             <div className={s.column}>
+                standart input:
+                <SuperInputText/>
+                + class
+                <SuperInputText
+                    className={s.blue} // проверьте, рабоtaет ли смешивание классов
+                />
+                + value, onChangetext - error, onEnter - alert, class span
                 <SuperInputText
                     value={text}
                     onChangeText={setText}
                     onEnter={showAlert}
                     error={error}
-                    // spanClassName={s.testSpanError}
+                    className={s.testClassName}
+                    spanClassName={s.testSpanError}
                 />
 
-                <SuperInputText
-                    className={s.blue} // проверьте, рабоет ли смешивание классов
-                />
 
                 {/*----------------------------------------------------*/}
-
+                default button
                 <SuperButton>
                     default
                 </SuperButton>
-
+                default button + click + red
                 <SuperButton
                     red // пропсу с булевым значением не обязательно указывать true
                     onClick={showAlert}
                 >
-                    delete {/*// название кнопки попадёт в children*/}
+                    click me {/*// название кнопки попадёт в children*/}
                 </SuperButton>
+                default button + disabled + red
+                <SuperButton red disabled>
 
-                <SuperButton disabled>
                     disabled
+                </SuperButton>
+                button + className
+                <SuperButton className={s.slidingButton}>
+                    наведи на меня
                 </SuperButton>
 
                 {/*----------------------------------------------------*/}

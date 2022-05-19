@@ -1,9 +1,11 @@
 .someClass {
-
+    border: 3px solid black;
+    background: white;
 }
 
-.error {
+.errorCl {
     border: 1px solid red;
+    background: white;
 }
 .errorDiv {
     color: red;
