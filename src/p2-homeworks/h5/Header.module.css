@@ -1,0 +1,54 @@
+/*
+.navLinkClass  {
+    margin-left: 1em;
+    !*background: red;*!
+    color: cornflowerblue;
+}
+.conteiner {
+    display: none;
+}
+.openlinks {
+    margin-left: 1em;
+    width: 0.8em;
+    height: 0.8em;
+    background-color: cornflowerblue;
+    display: inline-block;
+}
+
+div:hover > div,
+div:focus-within > div
+{
+    display: inline-block;
+
+}
+
+*/
+
+
+
+/*li {*/
+/*    color: #fff;*/
+/*    background: darkorange;*/
+/*      float: left;*/
+
+
+/*    transition-duration: 0.5s;*/
+/*}*/
+/*
+
+ li ul {
+    display: none;
+}
+
+ li:hover > ul,
+ li:focus-within > ul, !* this is the line we add *!
+ li ul:hover {
+    !*visibility: visible;*!
+    !*opacity: 1;*!
+    display: block;
+}
+
+ul li ul li {
+    !*clear: both;*!
+    !*width: 100%;*!
+}*/
