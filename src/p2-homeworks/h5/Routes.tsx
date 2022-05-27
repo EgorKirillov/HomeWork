@@ -1,9 +1,13 @@
 import React from 'react'
 
-export const PATH = {
-    PRE_JUNIOR: '/pre-junior',
-    // add paths
-}
+
+// export const PATH = {
+//     PRE_JUNIOR: '/pre-junior',
+//     JUNIOR: '/junior',
+//     JUNIOR_PLUS: '/junior-plus',
+//
+//     // add paths
+// }
 
 function Routes() {
     return (
@@ -16,7 +20,7 @@ function Routes() {
             {/*<Route path={'/'} exact render={() => <Redirect to={PATH.PRE_JUNIOR}/>}/>*/}
 
             {/*<Route path={PATH.PRE_JUNIOR} render={() => <PreJunior/>}/>*/}
-                // add routes
+            {/*    // add routes*/}
 
             {/*у этого роута нет пути, он отрисуется если пользователь захочет попасть на несуществующую страницу*/}
             {/*<Route render={() => <Error404/>}/>*/}
