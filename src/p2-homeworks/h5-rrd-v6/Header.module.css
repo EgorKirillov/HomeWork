@@ -1,8 +1,10 @@
 .link{
     margin: 10px;
+    text-decoration: none;
+    color: cadetblue;
 }
 
-.conteiner {
+.conteiner{
     display: flex;
     transition: 300ms;
     transform: translate(-240px);
@@ -18,4 +20,10 @@
     width: 20px;
     height: 20px;
     background-color: cornflowerblue;
+}
+
+ .linkActive{
+     margin: 10px;
+     text-decoration: none;
+    color: #0000f0;
 }

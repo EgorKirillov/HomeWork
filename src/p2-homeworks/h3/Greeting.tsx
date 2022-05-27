@@ -12,27 +12,25 @@ type GreetingPropsType = {
 }
 
 // презентационная компонента (для верстальщика)
-const Greeting: React.FC<GreetingPropsType> = (
-    {name, setNameCallback, addUser, totalUsers, ...props} // деструктуризация пропсов
-) => {
+const Greeting: React.FC<GreetingPropsType> = ({name, setNameCallback, addUser, totalUsers, ...props}) => {
     const inputClass = ` ${s.someClass} ${props.error ? s.errorCl : ""} ` // need to fix with (?:)
-
 
     return (
         <div>
             <SuperInputText
                 value={name}
                 onChange={setNameCallback}
-                 onEnter={addUser}
+                onEnter={addUser}
                 error={props.error}
                 className={inputClass}
                 spanClassName={s.testSpanError}
             />
-{/*            <input value={name} onChange={setNameCallback} className={inputClass}/>*/}
+            {/*<input value={name} onChange={setNameCallback} className={inputClass}/>*/}
 
             <SuperButton onClick={addUser}> Super add </SuperButton>
-            {/*<button onClick={addUser}>add</button>*/}
             <span>{totalUsers}</span>
+
+            {/*<button onClick={addUser}>add</button>*/}
             {/*{props.error && <div className={s.errorDiv}>{props.error}</div>}*/}
         </div>
     )

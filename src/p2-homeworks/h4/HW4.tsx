@@ -17,8 +17,7 @@ function HW4() {
     }
 
     const [checked, setChecked] = useState<boolean>(false)
-    const testOnChange = (e: ChangeEvent<HTMLInputElement>) =>setChecked(e.currentTarget.checked)
-
+    const testOnChange = (e: ChangeEvent<HTMLInputElement>) => setChecked(e.currentTarget.checked)
 
 
     return (
@@ -26,14 +25,15 @@ function HW4() {
         <div>
             <hr/>
             homeworks 4
-
             <div className={s.column}>
                 standart input:
                 <SuperInputText/>
+
                 + class
                 <SuperInputText
                     className={s.blue} // проверьте, рабоtaет ли смешивание классов
                 />
+
                 + value, onChangetext - error, onEnter - alert, class span
                 <SuperInputText
                     value={text}
@@ -44,12 +44,10 @@ function HW4() {
                     spanClassName={s.testSpanError}
                 />
 
-
-                {/*----------------------------------------------------*/}
+                {/*-------------------------SuperButton---------------------------*/}
                 default button
-                <SuperButton>
-                    default
-                </SuperButton>
+                <SuperButton>default</SuperButton>
+
                 default button + click + red
                 <SuperButton
                     red // пропсу с булевым значением не обязательно указывать true
@@ -57,17 +55,15 @@ function HW4() {
                 >
                     click me {/*// название кнопки попадёт в children*/}
                 </SuperButton>
+
                 default button + disabled + red
-                <SuperButton red disabled>
 
-                    disabled
-                </SuperButton>
-                button + className
-                <SuperButton className={s.slidingButton}>
-                    наведи на меня
-                </SuperButton>
+                <SuperButton red disabled> disabled </SuperButton>
 
-                {/*----------------------------------------------------*/}
+                button + className смешивание классов
+                <SuperButton className={s.slidingButton}>наведи на меня</SuperButton>
+
+                {/*-------------------------SuperCheckbox---------------------------*/}
 
                 <SuperCheckbox
                     checked={checked}

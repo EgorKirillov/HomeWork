@@ -14,9 +14,7 @@ function HW3() {
     const [users, setUsers] = useState<Array<UserType>>([]) // need to fix any = any --->  Array<UserType>
 
     const addUserCallback = (name: string) => { // need to fix any -->string
-
         setUsers([...users, {_id: v1(), name: name}]) // need to fix [] --> [...users, {_id:v1(), name:name}]
-
     }
 
 
@@ -24,18 +22,15 @@ function HW3() {
         <div>
             <hr/>
             homeworks 3
-
-            {/*should work (должно работать)*/}
+            should work (должно работать)
             <GreetingContainer
                 users={users}
                 addUserCallback={addUserCallback}
             />
-
-            <hr/>
-            <button onClick={()=>console.log(users)}>?log Users?</button>
+            {/*<hr/>*/}
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativeGreeting/>*/}
-            <hr/>
+            {/*<hr/>*/}
         </div>
     )
 }

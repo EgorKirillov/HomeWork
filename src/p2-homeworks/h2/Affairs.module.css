@@ -1,38 +1,37 @@
 
 .conteiner {
-    /*background: #b7e616;*/
     display: grid;
     grid-template-columns: minmax(50px, 150px) 100px 50px;
     justify-items: center;
-
     align-content: start;
     grid-column-gap: 10px;
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin: 5px;
+}
 
-    }
 .titleName {
-    /*background-color: #7875a4;*/
     color: #0000f0;
     text-decoration: underline;
 }
+
 .priorityName {
-    /*background-color: gray;*/
     color: #0000a0;
     text-decoration: underline;
+}
 
+.buttonBox {
+    background-color: #bbb;
+    color: firebrick;
+    font-weight: 800;
 }
-.buttonBox{
-    background-color: #660000;
-    color: red;
-}
+
 .buttonPriority {
     background-color: cadetblue;
     width: 80px;
-    font-size: 1.5em;
+    font-size: 1em;
     margin: 5px;
-
 }
+
 .someClass {
 
 }

@@ -41,7 +41,6 @@ const SuperInputText: React.FC<SuperInputTextPropsType> = (
     const finalSpanClassName = `${s.error} ${spanClassName ? spanClassName : ''}`
     const finalInputClassName = `${className ? className : s.errorInput} ` // need to fix with (?:) and s.superInput
 
-    debugger
     return (
         <>
             <input

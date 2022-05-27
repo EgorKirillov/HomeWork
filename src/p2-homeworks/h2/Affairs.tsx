@@ -22,33 +22,33 @@ function Affairs(props: AffairsPropsType) {
     const setAll = () => {
         props.setFilter('all')
     } // need to fix
+
     const setHigh = () => {
         props.setFilter('high')
     }
+
     const setMiddle = () => {
         props.setFilter('middle')
     }
+
     const setLow = () => {
         props.setFilter('low')
     }
 
     return (
         <div>
+            {mappedAffairs}
+            <div>
+                <SuperButton className={s.buttonPriority} onClick={setAll}> Super All</SuperButton>
+                <SuperButton className={s.buttonPriority} onClick={setHigh}> Super High</SuperButton>
+                <SuperButton className={s.buttonPriority} onClick={setMiddle}> Super Middle</SuperButton>
+                <SuperButton className={s.buttonPriority} onClick={setLow}> Super Low</SuperButton>
 
-                {mappedAffairs}
-
-
-<div>
-    <SuperButton className={s.buttonPriority} onClick={setAll}> Super All</SuperButton>
-    {/*<button className={s.buttonPriority} onClick={setAll}>All</button>*/}
-    <SuperButton className={s.buttonPriority} onClick={setHigh}> Super High</SuperButton>
-    {/*<button className={s.buttonPriority} onClick={setHigh}>High</button>*/}
-    <SuperButton className={s.buttonPriority} onClick={setMiddle}> Super Middle</SuperButton>
-    {/*<button className={s.buttonPriority} onClick={setMiddle}>Middle</button>*/}
-    <SuperButton className={s.buttonPriority} onClick={setLow}> Super Low</SuperButton>
-    {/*<button className={s.buttonPriority} onClick={setLow}>Low</button>*/}
-</div>
-
+                {/*<button className={s.buttonPriority} onClick={setAll}>All</button>*/}
+                {/*<button className={s.buttonPriority} onClick={setHigh}>High</button>*/}
+                {/*<button className={s.buttonPriority} onClick={setMiddle}>Middle</button>*/}
+                {/*<button className={s.buttonPriority} onClick={setLow}>Low</button>*/}
+            </div>
         </div>
     )
 }

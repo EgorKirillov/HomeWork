@@ -10,6 +10,7 @@ type messagePropsType = {
 }
 
 function Message(props: messagePropsType) {
+    // очень долго возился с закруглением, сделал через Жб но сработало, правильно решение смотрел. намного проще, но знаний в верстке не хватает. специально не исправлял
     return (
         <>
             <table className={s.tableMsg}>
