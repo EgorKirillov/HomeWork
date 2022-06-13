@@ -38,7 +38,6 @@ function HW8() {
      <div>
         <hr/>
         homeworks 8
-        
         <div className={s.wrapper}>{finalPeople}</div>
         <span><SuperButton onClick={sortUp}>sort up</SuperButton></span>
         <span><SuperButton onClick={sortDown}>sort down</SuperButton></span>

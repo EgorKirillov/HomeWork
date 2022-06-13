@@ -21,11 +21,10 @@ export const homeWorkReducer = (state: UserType[], action: homeWorkReducerStateT
    let newState = state.map(el => ({_id: el._id, name: el.name, age: el.age}))
    switch (action.type) {
       case 'sort': {
-         newState.sort((a, b) => a.age - b.age)
          return (action.payload === "up")
-           ? newState.sort((a, b) => a.age - b.age)
+           ? newState.sort((a, b) => (a.name<b.name)? -1:0)
            : (action.payload === "down")
-             ? newState.sort((a, b) => b.age - a.age)
+             ? newState.sort((a, b) => ((b.name<a.name)? -1:0))
              : newState
       }
       case 'check': {
