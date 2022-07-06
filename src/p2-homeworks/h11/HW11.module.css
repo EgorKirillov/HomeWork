@@ -1,0 +1,12 @@
+.firstSpan{
+    display: inline-block;
+    width: 25px;
+    text-align: end;
+}
+.secondSpan{
+    display: inline-block;
+    width: 25px;
+    text-align: end;
+    z-index: 2;
+    position: relative;
+}

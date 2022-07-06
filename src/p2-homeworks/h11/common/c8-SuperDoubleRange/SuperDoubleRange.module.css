@@ -1,5 +1,53 @@
-.range {
+
+.rangeslider {
+    display: inline-block;
+    position: relative;
+    width: 130px;
+    height: 30px;
+    /*text-align: center;*/
+
 
 }
 
+.rangeslider input {
+    pointer-events: all;
+    position: absolute;
+    /*overflow: hidden;*/
+    left: 0;
+    top: 15px;
+    width: 130px;
+    outline: none; /* рамка вокруг при перетаскивании*/
+    height: 18px;
+    margin: 0;
+    padding: 0;
+}
 
+
+.rangeslider input::-webkit-slider-thumb {
+    pointer-events: all;
+    position: relative;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.finalRangeClassName1::-webkit-slider-runnable-track {
+
+
+}
+
+.finalRangeClassName1::-webkit-slider-thumb {
+
+    box-shadow: -10px 0 0 8px white,
+    -28px 0 0 8px white,
+    -48px 0 0 8px white,
+    -68px 0 0 8px white,
+    -88px 0 0 8px white,
+    -108px 0 0 8px white,
+    -128px 0 0 8px white,
+    -148px 0 0 8px white,
+    -168px 0 0 8px white
+;
+
+
+
+}
