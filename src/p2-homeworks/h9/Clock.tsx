@@ -32,7 +32,7 @@ function Clock() {
      : "" // fix with date
    
    const stringDate = (date)
-     ? `${(date.getDate() < 10) ? "0" + date.getDate() : date.getDate()}.${date.getMonth() < 10 ? '0' + date.getMonth() : date.getMonth()}.${date.getFullYear()}`
+     ? `${(date.getDate() < 10) ? "0" + date.getDate() : date.getDate()}.${date.getMonth()+1 < 10 ? '0' + date.getMonth()+1 : date.getMonth()+1}.${date.getFullYear()}`
      : ""// fix with date
    
    return (
