@@ -21,3 +21,9 @@
 .some-text {
     color: darkslateblue;
 }
+.bright {
+    background: #eee;
+}
+.bright-text {
+    color: #323232;
+}
