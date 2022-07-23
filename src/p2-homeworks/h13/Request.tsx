@@ -7,14 +7,7 @@ const Request = () => {
     
     const onClickHandler = () => {
         requestAPI.postRequest(valueCheckbox)
-            .then((res) => {
-                console.log(res)
-                setResponse(`${res.data.errorText}, ${res.data.info}`)
-            }).catch((error) => {
-            console.log(error)
-                setResponse(error.response ? `${error.response.data.errorText}, ${error.response.data.info}` : error.message)
-            }
-        )
+            .then(response => setResponse(`${response.data.errorText}, ${response.data.info}`))
     }
     const onCheckedHandler = () => {
         setValueCheckbox(!valueCheckbox)
